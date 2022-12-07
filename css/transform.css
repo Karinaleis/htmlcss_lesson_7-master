@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block{
+    transition-duration: 500ms;
+    transition-delay: .3s, 2s, 3s;
+    transition-property: background-color, border, border-radius;
+    margin: 30px 0 0 30px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.block:hover{
+    background-attachment: blue;
+    border: 10px solid green;
+    border-radius: 50%;
+    color: white;
+}
+
+.block:active{
+    background-color: green;
+    border: 10px solid blue;
+}
+.block1,
+.block2,
+.block3,
+.block4,
+.block5{
+    width: 100px;
+    height: 100px;
+    transition-duration: 1500ms;
+}
+
+.block1{
+    background-color: red;
+    transition-timing-function: linear;
+}
+
+.block2{
+    background-color: orange;
+    transition-timing-function: ease-in;
+}
+
+.block3{
+    background-color: yellow;
+    transition-timing-function: ease;
+}
+
+.block4{
+    background-color: green;
+    transition-timing-function: ease-out;
+}
+
+.block5{
+    background-color: blue;
+    transition-timing-function: ease-in-out;
+}
+
+.parent:hover div {
+    transform: translateX(1400px)
+}
